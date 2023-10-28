@@ -1,0 +1,144 @@
+
+@import "./geral.css";
+
+/*Ajustes para o logo*/
+.imglogo{
+    width: 22%;
+    position: absolute;
+    top:15%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+body{
+    background-image: url(..//Img/texture3.png);
+}
+/* Quem está assistindo?*/
+section h1{
+    color:#D9D9D9;
+    font-size: 1.2em;
+    margin-bottom: 2%;
+  
+}
+
+/*Configurações para os perfis*/
+.perfil{
+    width: 100%;
+    height: 35%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.perfis{
+    width: 60%;
+    height: 40%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.per-info{
+    margin-top: 2em;
+    width: 11.5em;
+    height: 8.3em;
+    text-align:center;
+    justify-content:center;
+    color: #D9D9D9;
+    font-size: 1em;
+}
+.btn-img img{
+    margin-top:10%;
+    height: 6.6em;
+    transition: 0.6s;
+}
+.Img{
+    width:100%;
+    cursor:pointer;
+    transition: 0.6s;
+}
+
+.Img:hover{
+    transform: scale(1.15); 
+}
+.img-2:hover{
+    transform: scale(1.15);
+}
+/*Fim: Configurações dos perfis*/
+
+/* Configurações do botão "Tela de Login"*/
+.button{
+    margin-top:15%;
+    background-color:transparent;
+    border: 1px;
+    font-size: 14px;
+    margin-left:15px;
+    justify-content: center;
+}
+/*Fim:Conf. Botão Entrar*/
+
+
+/*configuração basica do link*/
+
+a{
+    color: #D9D9D9;
+}
+
+@media screen and (min-width:0) and (max-width:1366px){
+    .perfis{
+        width: 58%;
+        height: 40%;
+        display: inline-flex;
+        flex-direction: row;
+       
+    }
+    .button{
+        margin-top:12%;
+    }
+    .btn-img img{
+        height:5.6em;
+    }
+}
+@media screen and (min-width:500px) and (max-width:800px){
+    .imglogo{
+        width: 50%;
+        top:10%;
+        display: flex; 
+    }
+    .perfil{
+        margin-top:25%;
+        width: 100%;
+        height: 35%;
+    }
+    .perfis{
+        column-count: 2;
+        width: 60%;
+        height: 40%;
+        display: table-column;
+        flex-direction: column;
+    }
+    .Img{
+        width:90%;
+        cursor:pointer;
+        transition: 0.6s;
+    }
+    .per-info{
+        margin-top: 0.1em;
+        width: 8.5em;
+        height: 9.3em;
+    }  
+    .perf-img{
+        display: flex;
+    }
+    .button{
+        margin-top:1%;
+    }
+    .button{
+        margin-top:8%;
+        
+    }
+
+
+}
+
+
+

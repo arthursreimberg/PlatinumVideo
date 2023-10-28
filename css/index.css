@@ -1,0 +1,233 @@
+
+*{
+    margin: 0;
+    padding: 0 ;
+    justify-content: center;
+
+}
+
+body{
+    background-image: url(..//Img/texture2.jpg);
+    display:flex;
+    background-color: #38458b;
+    overflow-x: hidden;
+    height:100%;
+    width:100%;
+    
+}
+ .logo{
+    display: flex;
+    width: 22%;
+    margin-top: 4%;
+    position: absolute;
+    transform: scale(1.2);
+    animation: flutuar 2s infinite alternate;
+    }
+
+@keyframes flutuar{
+    0%{
+    opacity: 0;
+    }
+    100%{
+    transform: translatey( 1px);
+    opacity: 1
+    }
+}
+
+
+form{
+    background-color: #7a81a4a8;
+    margin-top: 11%;
+    width: 25%;
+    height: 27.5em;
+    border-radius: 4%;
+}
+
+
+
+
+#email-text{
+    padding: 2%;
+    width: 80%;
+    height: 2em;
+    margin-left: 8%;
+    border: 1em;
+    border-radius: 0.5em;
+    font-family: bold;
+    font-size: 1.2em;
+    margin-top: 20%;
+    transition: 0.6s;
+}
+
+#email-text:hover{
+    background-color: LightSteelBlue;
+}
+
+#senha-text{
+    padding: 2%;
+    width: 80%;
+    height: 2em;
+    margin-left: 8%;
+    border: 1em;
+    border-radius: 0.5em;
+    font-family: bold;
+    font-size: 1.2em;
+    margin-top:13%;
+    transition: 0.6s;
+    
+    
+}
+#senha-text:hover{
+    background-color: LightSteelBlue;
+
+}
+
+li{
+    position: absolute;
+    margin-top: 4%;
+    margin-left:2%;
+    color:#D9D9D9;
+    text-decoration:underline;
+    list-style: none;
+    cursor:pointer;
+}
+
+
+.button{
+  
+    width: 30%;
+    height:10%;
+    margin-left: 34%;
+    margin-top:30%;
+    background-color: #303A6F;
+    color: #D9D9D9;
+    border-radius: 1em;
+    border: 0.1em;
+    font-size: 1.4em;
+    cursor: pointer;
+    transition:0.5s;
+    
+
+}
+
+h1{
+    display: flex;
+    cursor: pointer;
+    width: 30%;
+    height:10%;
+    margin-left:-11.2% ;
+    margin-top: 0.3%;
+    position: absolute;
+    color: #D9D9D9;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family:helvetica;
+    }
+
+.inser{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgba(197, 15, 15, 0.795);
+    margin-top: 0.5%;
+    margin-left: 2%;
+    display:none;
+    position: absolute;
+    animation: sinalizar alternate 0.7s;
+}
+
+.email-incorreto{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgba(197, 15, 15, 0.795);
+    margin-top: 0.5%;
+    margin-left: 2%;
+    display:none;
+    position: absolute;
+    animation: sinalizar alternate 0.7s;
+}
+.senha-incorreta{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgba(197, 15, 15, 0.795);
+    margin-top: 0.5%;
+    margin-left: 2%;
+    display:none;
+    position: absolute;
+    animation: sinalizar alternate 0.7s;
+}
+
+@keyframes sinalizar{
+    0%{
+    opacity: 0;
+    }
+    100%{
+    opacity: 1;
+    }
+}
+.button:hover{
+    background-color: #122258;
+}
+
+/*responsividade*/
+@media screen and (min-width:0) and (max-width:1366px){
+    form{
+        margin-top: 11%;
+        width: 27%;
+        height: 24.5em;
+        border-radius: 4%;
+    }
+    
+}
+@media screen and (min-width:500px) and (max-width:800px){
+    form{
+        background-color: #7a81a4a8;
+        margin-top: 40%;
+        width: 18em;
+        height: 23em;
+        border-radius: 4%;
+    }
+    .logo{
+        width: 60%;
+        margin-top: 15%;
+        position: absolute;
+
+    }
+    #email-text{
+        height: 1.5em;
+        margin-top: 23%;
+       
+    }
+    #senha-text{
+        height:1.5em;
+        margin-top: 20%;
+    }
+    .button{
+        margin-left: 34%;
+        margin-top: 35%;
+    
+    }
+    
+    h1{
+        font-size: 0.9em;
+        position: absolute;
+        margin-left: -6%;
+        margin-top: 1%;
+    }
+
+    li{
+        margin-top: 12%;
+        margin-left: 5.5%;
+        font-size: 0.85em;
+    }
+    .email-incorreto{
+        margin-left: 1.5em;
+        font-size: 0.9em;
+
+    }
+    .inser{
+        margin-left: 1.5em;
+        font-size: 0.9em;
+    }
+    .senha-incorreta{
+        margin-left: 1.5em;
+        font-size: 0.9em;
+    }
+
+}
