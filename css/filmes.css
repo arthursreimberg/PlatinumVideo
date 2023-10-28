@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-image: url(..//Img/texture.jpg);
+    background-image: url(..//Img_geral/texture.jpg);
     overflow-x: hidden; /* esconde o horizontal scrollbar */
 }
 
