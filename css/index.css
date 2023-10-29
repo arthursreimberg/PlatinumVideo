@@ -13,6 +13,7 @@ body{
     overflow-x: hidden;
     height:100%;
     width:100%;
+    justify-content: center;
     
 }
  .logo{
@@ -107,7 +108,6 @@ li{
     font-size: 1.4em;
     cursor: pointer;
     transition:0.5s;
-    text-align: center;
     align-items: center;
     display: flex;
 
@@ -164,7 +164,7 @@ h1{
 }
 
 /*responsividade*/
-@media screen and (min-width:375px) and (max-width:1080px){
+@media screen and (min-width:375px) and (max-width:800px){
     form{
         background-color: #7a81a4a8;
         margin-top: 50%;
