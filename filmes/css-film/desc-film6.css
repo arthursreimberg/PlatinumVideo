@@ -373,7 +373,7 @@ iframe{
     font-size:80%;
 }
 
-@media screen and (min-width:500px) and (max-width:800px){
+@media screen and (min-width:400px) and (max-width:800px){
     /*config-nav*/
     .navi ul{
         display: none;
