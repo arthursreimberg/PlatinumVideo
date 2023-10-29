@@ -108,14 +108,14 @@ li{
     cursor: pointer;
     transition:0.5s;
     text-align: center;
+    align-items: center;
+    display: flex;
 
 }
 
+
 h1{
-    display:inline-flex;
     cursor: pointer;
-    margin-top: 3%;
-    justify-content: center;
     color: #D9D9D9;
     font-size: 125%;
     cursor: pointer;
@@ -191,12 +191,12 @@ h1{
         margin-left: 34%;
         margin-top: 35%;
         text-align: center;
+        display: flex;
     
     }
     
     h1{
         font-size: 90%;
-        margin: auto;
     }
 
     li{
