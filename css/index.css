@@ -164,7 +164,7 @@ h1{
 }
 
 /*responsividade*/
-@media screen and (min-width:360px) and (max-width:1080px){
+@media screen and (min-width:0px) and (max-width:1080px){
     form{
         background-color: #7a81a4a8;
         margin-top: 55%;
