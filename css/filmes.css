@@ -37,9 +37,9 @@ label.logo img:hover{
 }
 
 .lupa{
-    height: 1.5em;
+    height: 27%;
     margin-top:2.1%;
-    margin-left: -2.3em;
+    margin-left: -2.4%;
     cursor: pointer;
     position: absolute;
 }
@@ -283,14 +283,15 @@ label.logo img:hover{
 }
 
 /*responsividade*/
-@media screen and (min-width:400px) and (max-width:800px){
+@media screen and (min-width:0) and (max-width:1080px){
     label.logo img{
-        margin-top:1.3em;
-        height:2.5em;
+        margin-top: 12%;
+        height: 50%;
         width: auto;
+        display: flex;
     }
     .navi{
-        height: 5em;
+        height: 10%;
         width: 100%;
         position: absolute;
         
@@ -303,7 +304,7 @@ label.logo img:hover{
     }
 
     .src{
-        margin-top: 2.5em;
+        margin-top: 20%;
         width: 100%;
         height:30%;
         margin-left: 5%;
@@ -312,7 +313,7 @@ label.logo img:hover{
     
     .lupa{
         position: absolute;
-        margin-top: -1.32em;
+        margin-top: -4.5%;
         margin-left: 26.5%;
         width: auto;
         height:22%;
@@ -323,27 +324,27 @@ label.logo img:hover{
         overflow:hidden;
     }
     .dist{
-        width: 9em;
-        height: 13em;
+        width: 8em;
+        height: 12em;
     }
 
     .dist img{
-        width: auto;
+        width: 100%;
         height: 100%;
     }
 
     .slides-filme{
-        width: 400%;
+        width: 425%;
         
     }
 
     .slides-serie{
-        width:400%;
+        width:425%;
         margin-left: 0px;
     }
 
     .slides-desenho{
-        width:400%;
+        width:425%;
     }
 
     body h1{
