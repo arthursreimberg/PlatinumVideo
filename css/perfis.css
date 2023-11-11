@@ -12,6 +12,7 @@
 body{
     background-image: url(..//Img_geral/texture3.png);
     display: flex;
+    overflow: hidden;
 }
 /* Quem está assistindo?*/
 section h1{
@@ -71,10 +72,9 @@ section h1{
 
 /* Configurações do botão "Tela de Login"*/
 .button{
-    height:100%;
+    margin-bottom: -89%;
     background-color:transparent;
     border: 1px;
-    margin-top: 44%;
     margin-left: 1%;
     
 }
