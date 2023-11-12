@@ -368,6 +368,7 @@ iframe{
         margin-top: -15%;
         position: absolute;
         width: 95%;
+        height: 60%;
     }
     .slides{
         height: 50%;
@@ -389,11 +390,11 @@ iframe{
         transition: 1s;
     }
     #radio2:checked ~ .first{
-        margin-left: -120%;
+        margin-left: -104%;
         transition: 1s;
     }
     #radio3:checked ~ .first{
-        margin-left: -225%;
+        margin-left: -205%;
         transition: 1s;
     }
     /*fim config-slide*/
