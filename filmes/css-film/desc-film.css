@@ -80,13 +80,14 @@ label.logo img:hover{
 
 /*Inicio dos slides*/
 .slider{
-    margin-top:10.5em;
-    width: 45.67%;
+    margin-top:10%;
+    width: 45%;
     height: 70%;
     overflow: hidden;
+   
 }
 .slides{
-    width:100%;
+    width: auto;
     height: 85%;
     display:flex;
     overflow: hidden;
@@ -364,36 +365,30 @@ iframe{
     }
     /*config-slide*/
     .slider{
-        margin-top: -4em;
+        margin-top: -15%;
         position: absolute;
         width: 95%;
     }
     .slides{
-        width: 100%;
         height: 50%;
     }
     .slides input{
         display: none;
-    }
-    
-    .slide img{
-        width: auto;
-        height: 100%;
     }
     .manual-navigation{
         margin-top: 15px;
        
     }
     #radio1:checked ~ .first{
-        margin-left: -4%;
+        margin-left: 0%;
         transition: 1s;
     }
     #radio2:checked ~ .first{
-        margin-left: -112%;
+        margin-left: -150%;
         transition: 1s;
     }
     #radio3:checked ~ .first{
-        margin-left: -230%;
+        margin-left: -200%;
         transition: 1s;
     }
     /*fim config-slide*/
