@@ -81,24 +81,24 @@ label.logo img:hover{
 /*Inicio dos slides*/
 .slider{
     margin-top:10%;
-    width: 45%;
+    width:46%;
     height: 70%;
     overflow: hidden;
    
 }
 .slides{
-    width: auto;
+    width: 100%;
     height: 85%;
     display:flex;
     overflow: hidden;
     border-radius: 10px;
+   
 }
 .slides input{
     display: none;
 }
 
 .slide img{
-    width: auto;
     height: 100%;
 }
 
@@ -121,15 +121,15 @@ label.logo img:hover{
     background-color: LightSteelBlue;
 }
 #radio1:checked ~ .first{
-    margin-left: -3.1%;
+    margin-left: 0;
     transition: 1s;
 }
 #radio2:checked ~ .first{
-    margin-left: -105%;
+    margin-left: -100%;
     transition: 1s;
 }
 #radio3:checked ~ .first{
-    margin-left: -206%;
+    margin-left: -200%;
     transition: 1s;
 }
 /*fim dos slides*/
@@ -194,7 +194,7 @@ label.logo img:hover{
 /*Inicio da seção "personagem1"*/
 .historia-personagem1{
     width:100%;
-    height:40.75em;
+    height: 40.75em;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
@@ -204,7 +204,7 @@ label.logo img:hover{
 .historia-personagem1 p{
     color:#d9d9d9;
     font-size:19px;
-    width: 33em;
+    width: 100%;
 }
 
 .historia-personagem1 h1{
@@ -214,8 +214,8 @@ label.logo img:hover{
     font-family:'Courier New', Courier, monospace;
 }
 .text-personagem1{
-    width:600px;
-    height:400px;
+    width: 40%;
+    height: 20%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -259,8 +259,8 @@ label.logo img:hover{
     margin-bottom:30px;
 }
 .text-personagem2{
-    width:40em;
-    height:400px;
+    width: 40%;
+    height: 20%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -371,37 +371,42 @@ iframe{
     }
     .slides{
         height: 50%;
+
     }
     .slides input{
         display: none;
+    }
+    .slide img{
+        width: 26em;
+        height: auto;
     }
     .manual-navigation{
         margin-top: 15px;
        
     }
     #radio1:checked ~ .first{
-        margin-left: 0%;
+        margin-left: -5%;
         transition: 1s;
     }
     #radio2:checked ~ .first{
-        margin-left: -150%;
+        margin-left: -120%;
         transition: 1s;
     }
     #radio3:checked ~ .first{
-        margin-left: -200%;
+        margin-left: -225%;
         transition: 1s;
     }
     /*fim config-slide*/
 
     /*seção-historia*/
     #historia{
-        height:55em
+        height:55em;
     }
     
     #text-historia{
         width: 80%;
         height: 40%;
-        margin-top:25em;
+        margin-top:120%;
         position: relative;
       
     }
@@ -410,24 +415,24 @@ iframe{
     }
     
     #text-historia p{
-        margin-bottom: 5em;
+        margin-bottom: 6em;
          font-size:15px;
     }
     .idade{
         position:absolute;
         height:2.5em;
-        margin-left: 48em;
-        margin-top: 14em;
+        margin-left: 230%;
+        margin-top: 80%;
     }
     #text-historia h4{
-        margin-top: 11em;
-        margin-left: -18em;
+        margin-top: 80%;
+        margin-left: -13em;
         font-size: 1.3em;
     }
     .avalia{
-        height:1.3em;
-        margin-top:13.9em ;
-        margin-left:-13em;
+        height:1em;
+        margin-top: 80% ;
+        margin-left:-9em;
     }
     /*fim seção-historia*/
 
@@ -436,14 +441,15 @@ iframe{
  
     .historia-personagem1 p{
         font-size:12px;
+        
     }
 
     .historia-personagem1 h1{
-        margin-top: 1em;
+        margin-top: 30%;
         font-size:30px;
     }
     .text-personagem1{
-        width: 30em;
+        width: 80%;
         height: 20em;
         margin-right: 0;
         margin-top: 10em;
@@ -472,11 +478,11 @@ iframe{
         font-size:12px;
     }
     .historia-personagem2 h1{
-        margin-top: 1em;
+        margin-top: 30%;
         font-size:30px;
     }
     .text-personagem2{
-        width: 25em;
+        width: 80%;
         height: 20em;
         margin-top: 10em;
         margin-left: 0;
@@ -495,6 +501,11 @@ iframe{
     /*fim-personagem2*/
 
     /*mmelhores-momentos*/
+    .melhores-momentos{
+        column-count: 1;
+        display: table-column;
+        display: flex;
+    }
     .melhores-momentos h1{
         font-size: 30px;
         position: absolute;
@@ -504,15 +515,15 @@ iframe{
         margin-top: 3em;
         width: auto;
         height: 8em;
-        justify-content: space-around;
+
         
     }
     iframe{
         margin-top: 3em;
         width: auto;
-        height: 5em;
+        height: 20%;
         display: flex;
-        flex-direction: column;
+        
         
     }
     .melhores-momentos{
