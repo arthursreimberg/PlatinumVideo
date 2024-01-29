@@ -12,7 +12,7 @@ body{
 /* Logo*/
 label.logo img{
     height:80%;
-    width: 120%;
+    width: 100%;
     margin-top: 4%;
     margin-left: 10%;
     transition: 0.5s;
@@ -22,13 +22,15 @@ label.logo img:hover{
 
 }
 .pesquisa{
-    width: 30%;
+    width: 60%;
+    height: 40%;
     margin-left: 20%;
+    display: flex;
+    align-items: center;
 }
 .src{
-    margin-top: 1.3em;
     width: 95%;
-    height:45%;
+    height:100%;
     background-color: #080a12a4;
     border:1px;
     border-radius: 7px 7px 7px 7px;
@@ -37,19 +39,19 @@ label.logo img:hover{
 }
 
 .lupa{
-    height: 27%;
-    margin-top:2.1%;
-    margin-left: -2.4%;
+    height: 60%;
+    position: relative;
+    margin-left: -12%;
     cursor: pointer;
-    position: absolute;
+    
 }
-
 /* Barra de navegação*/
 .navi{
     width:100%;
     height:12.6%;
     background-color:#122258;
     position: fixed;
+    align-items: center;
     z-index: 10;
     display: flex;
 }
@@ -85,7 +87,6 @@ label.logo img:hover{
     background-color: LightSteelBlue;
     color:black;
 }
-
 /*Títulos Gerais*/
  body h1{
     margin-bottom:15px;
@@ -441,20 +442,4 @@ label.logo img:hover{
      
     
     }
-}
-@media screen and (min-width:1280px) and (max-width: 1366px){
-    .lupa{
-        background: #080a12a4 ;
-        float:right;
-        margin-top:8.5%;
-        width: 15%;
-        height:46%;
-    }
-    .dist img{
-        width: 110%;
-        height: 105%;
-        border-radius:2%;
-        transition: 0.25s;
-    }
-
 }

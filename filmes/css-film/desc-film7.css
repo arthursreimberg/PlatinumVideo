@@ -95,10 +95,15 @@ label.logo img:hover{
 /*configuração para corrigir largura do container em sites que possuem uma largura menor que o normal.*/
 @media screen and (max-width: 1500px) {
     .container{
-        width: 43.2%;
-        height: 48%;
+        width: 44.2%;
+        height: 50%;
     }
 
+}
+@media screen and (min-width:1300px) and (max-width: 1380px) {
+    .container{
+        height: 55%;
+    }
 }
 /*fim da configuração*/
 .slides{
