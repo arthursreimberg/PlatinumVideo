@@ -4,7 +4,7 @@
 /* Logo*/
 label.logo img{
     height:80%;
-    width: 120%;
+    width: 100%;
     margin-top: 4%;
     margin-left: 10%;
     transition: 0.5s;
@@ -14,13 +14,15 @@ label.logo img:hover{
 
 }
 .pesquisa{
-    width: 30%;
+    width: 60%;
+    height: 40%;
     margin-left: 20%;
+    display: flex;
+    align-items: center;
 }
 .src{
-    margin-top: 1.3em;
     width: 95%;
-    height:45%;
+    height:100%;
     background-color: #080a12a4;
     border:1px;
     border-radius: 7px 7px 7px 7px;
@@ -29,11 +31,11 @@ label.logo img:hover{
 }
 
 .lupa{
-    height: 27%;
-    margin-top:2.1%;
-    margin-left: -2.4%;
+    height: 60%;
+    position: relative;
+    margin-left: -12%;
     cursor: pointer;
-    position: absolute;
+    
 }
 /* Barra de navegação*/
 .navi{
@@ -41,6 +43,7 @@ label.logo img:hover{
     height:12.6%;
     background-color:#122258;
     position: fixed;
+    align-items: center;
     z-index: 10;
     display: flex;
 }
@@ -80,15 +83,18 @@ label.logo img:hover{
 
 /*Inicio dos slides*/
 .container{
-    margin-top:10%;
-    width:42.6%;
-    height: 70%;
+    position: absolute;
+    margin-top:5%;
+    margin-left: -45%;
+    width: 44%;
+    height: 55%;
+    align-items:center;
     overflow: hidden;
    
 }
 .slides{
     width: 98%;
-    height: 85%;
+    height: 100%;
     display:flex;
     overflow: hidden;
     border-radius: 10px;
@@ -107,10 +113,10 @@ label.logo img:hover{
 
 .botaoDireito{
     position: absolute;
-    width: 3%;
-    height: 52.7%;
-    margin-left: 38.75%;
-    margin-top: -24.15%;
+    margin-left: 91%;
+    bottom: 0%;
+    width: 7%;
+    height: 100%;
     border-radius: 0 10px 10px 0;
     transition: 0.5s;
     display: flex;
@@ -126,12 +132,11 @@ label.logo img:hover{
     
 }
 
-
 .botaoEsquerdo{
+    bottom:0;
     position: absolute;
-    width: 3%;
-    height: 52.7%;
-    margin-top: -24.15%;
+    width: 7%;
+    height: 100%;
     border-radius: 10px 0 0 10px;
     transition: 0.5s;
     display: flex;
@@ -145,6 +150,27 @@ label.logo img:hover{
 .seta-esquerda{
     width: 60%;
     height: 10%;
+}
+
+.button-play{
+    position: absolute;
+    display: flex;
+    margin-top:-12%;
+    margin-left: 7%;
+    align-items: center;
+    width: 20%;
+    height: 12%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    color:black;
+}
+.button-play a{
+    margin-left: 10%;
+}
+.play_img{
+    height:50%;
+    margin-left: 10%;
 }
 /*fim dos slides*/
 
@@ -162,6 +188,7 @@ label.logo img:hover{
     align-items:center;
 }
 #text-historia h1{
+
     color:#7FD9A8;
     font-size:45px;
     margin-bottom:20px;
@@ -170,9 +197,10 @@ label.logo img:hover{
 }
 
 #text-historia{
-    width:35em;
-    height:30em;
-    margin-top: 7em;
+    margin-left: 55%;
+    width: 40%;
+    height: 20%;
+    margin-top: 8%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -180,28 +208,30 @@ label.logo img:hover{
 }
 
 #text-historia p{
-        font-size:20px;
+        font-size:120%;
+        margin-bottom: 5%;
 }
 .idade {
-    height:3.5em;
-    display: flex;
-    margin-right: 31em;
-    margin-top:2em
+    height:24%;
+    margin-right: 92%;
+    bottom: 23%;
 }
 #text-historia h4{
-    position:absolute;
-    margin-top: 12.7em;
-    margin-left: 20em;
+    
+    position: relative;
+    bottom:25%;
+    margin-right: 74%;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5em;
+    font-size: 180%;
     color:#F1D72C
 }
 .avalia{
-    height:1.5em;
-    position:absolute;
-    margin-top:19em ;
-    margin-left: 17em;
+    height: 20%;
+    position:relative;
+    bottom:49%;
+    margin-right: 35%;
 }
+
 /*fim do inicio da pagina*/
 
 
