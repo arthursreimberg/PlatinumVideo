@@ -92,6 +92,15 @@ label.logo img:hover{
     overflow: hidden;
    
 }
+/*configuração para corrigir largura do container em sites que possuem uma largura menor que o normal.*/
+@media screen and (max-width: 1500px) {
+    .container{
+        width: 43.2%;
+        height: 48%;
+    }
+
+}
+/*fim da configuração*/
 .slides{
     width: 98%;
     height: 100%;
