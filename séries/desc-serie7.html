@@ -26,40 +26,29 @@
        <!-- Seção do conteudo da historia do filme-->
 
         <section id="historia">
-            <div class="slider">
+            <div class="container">
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                   
-        
-                   <div class="slide first">
-                    <img src="img-s/broklyn-1.jpg">
-                   </div> 
-                   <div class="slide">
-                    <img src="img-s/broklyn-2.jpg">
-                   </div> 
-                   <div class="slide">
-                    <img src="img-s/broklyn-3.jpg">
-                   </div> 
-                 
-                   <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
                     
-                   </div>
-        
+                    <div class="imgs">
+                        <img src="img-s/broklyn-1.jpg">
+                        <img src="img-s/broklyn-2.jpg"> 
+                        <img src="img-s/broklyn-3.jpg">
+                    </div>
+
                 </div>
-                
-        
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3"class="manual-btn"></label>
-                   
+                <div class="botaoDireito" onclick="moverDireita()">
+                    <img src="img-s/seta-direita.png" class ="seta-direita" >
+                </div>
+    
+                <div class="botaoEsquerdo" onclick="moverEsquerda()">
+                    <img src="img-s/seta-esquerda.png" class="seta-esquerda">
+                </div>
+                <div class="button-play">
+                    <img src="img-s/botao-play.png" class="play_img">
+                    <a>Assistir</a>
                 </div>
             </div>
+            <script src="..//slide.js"></script>
            <!-- sinopse do filme-->
         
             <div id="text-historia">
@@ -116,9 +105,9 @@ Venceu o Emmy de Melhor Música e Letra Original em 2007, com a música Dick in 
      
        <section class="melhores-momentos">
         <h1> Vídeos </h1>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-s/broklyn-1.mp4"></video></div>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-s/broklyn-1.mp4"></video></div>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-s/broklyn-1.mp4"></video></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zbdtowum840?si=_HkY31Vwq9BbVRun" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zTL7c50cz2E?si=lXDk1VkqUkCd-g-y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rjxASfS-uYE?si=M-yIyhRfKbBKcP5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
         <!-- fim dos "melhores momentos"-->
         <div class="footer">

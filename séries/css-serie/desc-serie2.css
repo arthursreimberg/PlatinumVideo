@@ -4,7 +4,7 @@
 /* Logo*/
 label.logo img{
     height:80%;
-    width: 120%;
+    width: 100%;
     margin-top: 4%;
     margin-left: 10%;
     transition: 0.5s;
@@ -14,13 +14,15 @@ label.logo img:hover{
 
 }
 .pesquisa{
-    width: 30%;
-    margin-left:20%;
+    width: 60%;
+    height: 40%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
 }
 .src{
-    margin-top: 1.3em;
     width: 95%;
-    height:45%;
+    height:100%;
     background-color: #080a12a4;
     border:1px;
     border-radius: 7px 7px 7px 7px;
@@ -29,11 +31,11 @@ label.logo img:hover{
 }
 
 .lupa{
-    height: 1.5em;
-    margin-top:2.1%;    
-    margin-left: -2.3em;
+    height: 60%;
+    position: relative;
+    margin-left: -12%;
     cursor: pointer;
-    position: absolute;
+    
 }
 /* Barra de navegação*/
 .navi{
@@ -41,6 +43,7 @@ label.logo img:hover{
     height:12.6%;
     background-color:#122258;
     position: fixed;
+    align-items: center;
     z-index: 10;
     display: flex;
 }
@@ -79,57 +82,109 @@ label.logo img:hover{
 /*Fim da barra de navegação*/
 
 /*Inicio dos slides*/
-.slider{
-    margin-top:10.5em;
-    width: 43.75em;
-    height:30em;
+.container{
+    position: absolute;
+    margin-top:5%;
+    margin-left: -45%;
+    width: 45%;
+    height: 55%;
+    align-items:center;
     overflow: hidden;
+   
 }
+/*configuração para corrigir largura do container em sites que possuem uma largura menor que o normal.*/
+@media screen and (max-width: 1500px) {
+    .container{
+        width: 44.2%;
+        height: 50%;
+    }
+
+}
+@media screen and (min-width:1300px) and (max-width: 1380px) {
+    .container{
+        height: 55%;
+    }
+}
+/*fim da configuração*/
 .slides{
-    width:100%;
-    height: 25em;
+    width: 98%;
+    height: 100%;
     display:flex;
     overflow: hidden;
     border-radius: 10px;
+   
 }
-.slides input{
-    display: none;
-}
-
-.slide img{
-    width: 43.75em;
-    height: 25em;
+.imgs img{
+    height: 100%;
 }
 
-.manual-navigation{
-    margin-top:10px;
+.imgs {
+    width: auto;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    transition: transform 1s ease;
 }
-.manual-btn{
-    border:1px solid #d9d9d9;
-    padding:5px;
-    border-radius:10px;
-    cursor:pointer;
-    transition: 0.4s;
+
+.botaoDireito{
+    position: absolute;
+    margin-left: 91%;
+    bottom: 0%;
+    width: 7%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
 }
-.manual-btn:not(:last-child){
-    margin-right:10px;
+.botaoDireito:hover{
+    background-color: #0000006b;
+    
 }
-.manual-btn:hover{
-    background-color: LightSteelBlue;
+.seta-direita{
+    width: 60%;
+    height: 10%;
+    
 }
-#radio1:checked ~ .first{
-    margin-left:0;
-    transition: 1s;
+
+.botaoEsquerdo{
+    bottom:0;
+    position: absolute;
+    width: 7%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
 }
-#radio2:checked ~ .first{
-    margin-left: -100%;
-    transition: 1s;
+.botaoEsquerdo:hover{
+    background-color: #0000006b;
+    
 }
-#radio3:checked ~ .first{
-    margin-left: -200%;
-    transition: 1s;
+
+.seta-esquerda{
+    width: 60%;
+    height: 10%;
+}
+
+.button-play{
+    position: absolute;
+    display: flex;
+    margin-top:-12%;
+    margin-left: 7%;
+    align-items: center;
+    width: 20%;
+    height: 12%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    color:black;
+}
+.button-play a{
+    margin-left: 10%;
+}
+.play_img{
+    height:50%;
+    margin-left: 10%;
 }
 /*fim dos slides*/
 
@@ -147,6 +202,7 @@ label.logo img:hover{
     align-items:center;
 }
 #text-historia h1{
+
     color:#7FD9A8;
     font-size:45px;
     margin-bottom:20px;
@@ -155,9 +211,10 @@ label.logo img:hover{
 }
 
 #text-historia{
-    width:35em;
-    height:30em;
-    margin-top: 7em;
+    margin-left: 55%;
+    width: 40%;
+    height: 20%;
+    margin-top: 8%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -165,27 +222,28 @@ label.logo img:hover{
 }
 
 #text-historia p{
-        font-size:20px;
+        font-size:120%;
+        margin-bottom: 5%;
 }
 .idade {
-    height:3.5em;
-    display: flex;
-    margin-right: 31em;
-    margin-top:2em
+    height:24%;
+    margin-right: 92%;
+    bottom: 23%;
 }
 #text-historia h4{
-    position:absolute;
-    margin-top: 10.7em;
-    margin-left: 20em;
+    
+    position: relative;
+    bottom:25%;
+    margin-right: 74%;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5em;
+    font-size: 180%;
     color:#F1D72C
 }
 .avalia{
-    height:1.5em;
-    position:absolute;
-    margin-top:16em ;
-    margin-left: 17em;
+    height: 20%;
+    position:relative;
+    bottom:49%;
+    margin-right: 35%;
 }
 /*fim do inicio da pagina*/
 
@@ -305,14 +363,15 @@ label.logo img:hover{
     
     
 }
-.videos-momentos video{
-     width: auto;
-     height: 15em;
-     
+iframe{
+    height:15em;
+    width: 26em;
+    margin-top: 5%;
 }
 /*Fim da seção "melhores-momentos*/
 
 .footer{
+    margin-top: 0;
     width:100%;
     height:8em;
     background: #06070e;

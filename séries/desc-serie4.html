@@ -26,40 +26,29 @@
        <!-- Seção do conteudo da historia do filme-->
 
         <section id="historia">
-            <div class="slider">
+            <div class="container">
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                   
-        
-                   <div class="slide first">
-                    <img src="img-s/black-list1.jpg">
-                   </div> 
-                   <div class="slide">
-                    <img src="img-s/black-list2.jpg">
-                   </div> 
-                   <div class="slide">
-                    <img src="img-s/black-list3.jpg">
-                   </div> 
-                 
-                   <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
                     
-                   </div>
-        
+                    <div class="imgs">
+                        <img src="img-s/black-list1.jpg">
+                        <img src="img-s/black-list2.jpg"> 
+                        <img src="img-s/black-list3.jpg">
+                    </div>
+
                 </div>
-                
-        
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3"class="manual-btn"></label>
-                   
+                <div class="botaoDireito" onclick="moverDireita()">
+                    <img src="img-s/seta-direita.png" class ="seta-direita" >
+                </div>
+    
+                <div class="botaoEsquerdo" onclick="moverEsquerda()">
+                    <img src="img-s/seta-esquerda.png" class="seta-esquerda">
+                </div>
+                <div class="button-play">
+                    <img src="img-s/botao-play.png" class="play_img">
+                    <a>Assistir</a>
                 </div>
             </div>
+            <script src="..//slide.js"></script>
            <!-- sinopse do filme-->
         
             <div id="text-historia">
@@ -110,9 +99,9 @@ Vencedor do Emmy do Primetime de melhor ator em série dramática e indicado tr�
      
        <section class="melhores-momentos">
         <h1> Vídeos </h1>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-s/blacklist-1.mp4"></video></div>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-s/blacklist-1.mp4"></video></div>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-s/blacklist-1.mp4"></video></div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Az4jPlcYQ74?si=soEzv_9ryKBPxKMp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IDq7O5sd0ok?si=-3uqOi9EO5QX8Df1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mA1Qo6E_dOc?si=pjcnazITERHHqKg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </section>
         <!-- fim dos "melhores momentos"-->
         <div class="footer">
