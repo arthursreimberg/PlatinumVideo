@@ -25,40 +25,29 @@
        <!-- Seção do conteudo da historia do desenho-->
 
         <section id="historia">
-            <div class="slider">
+            <div class="container">
                 <div class="slides">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                   
-        
-                   <div class="slide first">
-                    <img src="img-d/hora-de-aventura1.jpg">
-                   </div> 
-                   <div class="slide">
-                    <img src="img-d/hora-de-aventura2.png">
-                   </div> 
-                   <div class="slide">
-                    <img src="img-d/hora-de-aventura3.jpg">
-                   </div> 
-                 
-                   <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
                     
-                   </div>
-        
+                    <div class="imgs">
+                        <img src="img-d/hora-de-aventura1.jpg">
+                        <img src="img-d/hora-de-aventura2.png"> 
+                        <img src="img-d/hora-de-aventura3.jpg">
+                    </div>
+
                 </div>
-                
-        
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3"class="manual-btn"></label>
-                   
+                <div class="botaoDireito" onclick="moverDireita()">
+                    <img src="img-d/seta-direita.png" class ="seta-direita" >
+                </div>
+    
+                <div class="botaoEsquerdo" onclick="moverEsquerda()">
+                    <img src="img-d/seta-esquerda.png" class="seta-esquerda">
+                </div>
+                <div class="button-play">
+                    <img src="img-d/botao-play.png" class="play_img">
+                    <a>Assistir</a>
                 </div>
             </div>
+            <script src="..//slide.js"></script>
            <!-- sinopse do filme-->
         
             <div id="text-historia">
@@ -107,9 +96,9 @@
      
        <section class="melhores-momentos">
             <h1> Vídeos </h1>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-d/hora-de-aventura1.mp4"></video></div>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-d/hora-de-aventura1.mp4"></video></div>
-            <div class="videos-momentos"><video name="movie" controls><source id="movie" src= "videos-d/hora-de-aventura1.mp4"></video></div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hTa-u3jTAFc?si=WSbWnHbLrexG1guI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TDD24X-hg0k?si=JUdhAplMf-OZW2jw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BPKPldQTvRU?si=R_uk65a_1DjFmrCf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
        </section>
         <!-- fim dos "melhores momentos"-->
         <div class="footer">
