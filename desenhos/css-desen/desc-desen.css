@@ -181,6 +181,7 @@ label.logo img:hover{
 }
 .button-play a{
     margin-left: 10%;
+    text-decoration: none;
 }
 .play_img{
     height:50%;
